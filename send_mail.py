@@ -11,7 +11,7 @@ def send(filename):
 
     subject="Stock Report"
     from_add='brainyplays222@gmail.com'
-    to_add='dhirajkhali1@gmail.com'
+    to_add='dhiraj@gmail.com'
     msg['From']=from_add
     msg['To']=to_add
     msg['Subject']=subject
@@ -28,6 +28,6 @@ def send(filename):
     message=msg.as_string()
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login(from_add,'ealfqbpcilxnvbmz')
+    server.login(from_add,'your_login_code')
     server.sendmail(from_add,to_add,message)
     server.quit()
